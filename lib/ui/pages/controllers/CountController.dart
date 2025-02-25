@@ -6,8 +6,10 @@ class CountController extends GetxController implements GetxService{
 
   void increment(){
     cnt++;
+    update();
   }
   void decrement(){
     cnt--;
+    update();
   }
 }
